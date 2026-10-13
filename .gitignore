@@ -1,0 +1,85 @@
+# ===================================================================
+# STRATAGEM AI: Git Ignore Rules
+# ===================================================================
+
+# 1. Environment Variables & Secret Credentials (CRITICAL)
+.env
+.env.local
+.env.*.local
+*.env
+server/.env
+client/.env
+
+# Always track example templates
+!.env.example
+!server/.env.example
+!client/.env.example
+
+# 2. Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+.pnp
+.pnp.js
+
+# 3. Production Build Outputs & Bundles
+dist/
+client/dist/
+build/
+client/build/
+.vite/
+client/.vite/
+*.tsbuildinfo
+
+# 4. Runtime Database Files & Uploads
+server/data/db.json
+server/data/*.json
+uploads/
+server/uploads/
+*.sqlite
+*.sqlite3
+*.db
+
+# 5. Logs & Debugging
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 6. Testing & Coverage
+coverage/
+.nyc_output/
+test-results/
+.playwright/
+playwright-report/
+
+# 7. OS & System Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# 8. Editor & IDE Settings
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+
+# 9. Temporary & Cache Directories
+tmp/
+temp/
+*.tmp
+.cache/
+.eslintcache

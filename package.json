@@ -1,0 +1,25 @@
+{
+  "name": "stratagem-decision-intelligence",
+  "version": "1.0.0",
+  "description": "Production-ready AI-powered Decision Intelligence Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "build:client": "npm run build --workspace=client",
+    "start:server": "npm start --workspace=server",
+    "test:server": "npm test --workspace=server",
+    "test": "npm run test:server",
+    "migrate": "npm run migrate --workspace=server",
+    "db:migrate": "npm run db:migrate --workspace=server",
+    "install:all": "npm install && npm install --workspace=server && npm install --workspace=client"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

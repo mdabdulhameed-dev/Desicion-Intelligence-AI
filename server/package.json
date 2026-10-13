@@ -1,0 +1,30 @@
+{
+  "name": "stratagem-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node --test",
+    "test:supabase": "node src/db/test-supabase.js",
+    "migrate": "node src/db/migrate.js",
+    "db:migrate": "node src/db/migrate.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.23.1",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
