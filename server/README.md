@@ -87,6 +87,9 @@ npm test --workspace=server
 # Test live connection handshake to Supabase
 npm run test:supabase --workspace=server
 
+# Test live connection handshake to Google Gemini AI
+npm run test:gemini --workspace=server
+
 # Run Supabase migration and emit all variables
 npm run migrate --workspace=server
 ```

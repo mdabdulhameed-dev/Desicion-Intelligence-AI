@@ -10,11 +10,11 @@ import {
   Legend
 } from 'recharts';
 
-const PALETTE = ['#6366F1', '#10B981', '#F59E0B', '#EC4899', '#06B6D4', '#8B5CF6'];
+const PALETTE = ['#F43F5E', '#FF5E7E', '#BE123C', '#FDA4AF', '#F59E0B', '#10B981'];
 
 export default function DecisionRadarChart({ criteria, alternatives }) {
   if (!criteria || criteria.length === 0 || !alternatives || alternatives.length === 0) {
-    return <div className="text-slate-500 text-sm p-4 text-center">No criteria or alternatives available to plot radar.</div>;
+    return <div className="text-slate-400 text-sm p-4 text-center">No criteria or alternatives available to plot radar.</div>;
   }
 
   // Transform into Recharts radar format
@@ -39,16 +39,16 @@ export default function DecisionRadarChart({ criteria, alternatives }) {
     <div className="w-full h-80 sm:h-96">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart cx="50%" cy="50%" outerRadius="75%" data={data}>
-          <PolarGrid stroke="#334155" strokeDasharray="3 3" />
+          <PolarGrid stroke="#451B29" strokeDasharray="3 3" />
           <PolarAngleAxis
             dataKey="criterion"
-            tick={{ fill: '#94A3B8', fontSize: 11, fontWeight: 500 }}
+            tick={{ fill: '#FCA5B1', fontSize: 11, fontWeight: 500 }}
           />
           <PolarRadiusAxis
             angle={30}
             domain={[0, 100]}
-            stroke="#475569"
-            tick={{ fill: '#64748B', fontSize: 10 }}
+            stroke="#6E3245"
+            tick={{ fill: '#E598A4', fontSize: 10 }}
           />
           <Tooltip
             content={({ active, payload, label }) => {

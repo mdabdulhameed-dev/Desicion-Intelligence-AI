@@ -10,7 +10,7 @@ import {
   Legend
 } from 'recharts';
 
-const PALETTE = ['#6366F1', '#10B981', '#F59E0B', '#EC4899', '#06B6D4'];
+const PALETTE = ['#F43F5E', '#FF5E7E', '#BE123C', '#FDA4AF', '#F59E0B'];
 
 export default function MonteCarloDistributionChart({ simulationData, alternatives }) {
   if (!simulationData || !simulationData.distributionBins) {
@@ -104,16 +104,16 @@ export default function MonteCarloDistributionChart({ simulationData, alternativ
                   );
                 })}
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#1E293B" vertical={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke="#2A0E19" vertical={false} />
               <XAxis
                 dataKey="bin"
-                tick={{ fill: '#94A3B8', fontSize: 10 }}
-                axisLine={{ stroke: '#334155' }}
+                tick={{ fill: '#FDA4AF', fontSize: 10 }}
+                axisLine={{ stroke: '#451B29' }}
               />
               <YAxis
-                tick={{ fill: '#94A3B8', fontSize: 10 }}
+                tick={{ fill: '#FDA4AF', fontSize: 10 }}
                 unit="%"
-                axisLine={{ stroke: '#334155' }}
+                axisLine={{ stroke: '#451B29' }}
               />
               <Tooltip
                 content={({ active, payload, label }) => {

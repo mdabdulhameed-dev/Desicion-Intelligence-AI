@@ -34,9 +34,9 @@ export default function Register() {
 
       <div className="w-full max-w-md relative z-10 space-y-6">
         <div className="text-center space-y-2">
-          <div className="inline-flex w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-accent-cyan p-0.5 shadow-glow mb-1">
+          <div className="inline-flex w-12 h-12 rounded-2xl bg-gradient-to-tr from-rose-600 via-red-500 to-amber-500 p-0.5 shadow-glow-rose mb-1">
             <div className="w-full h-full bg-surface rounded-[14px] flex items-center justify-center">
-              <Brain className="w-6 h-6 text-accent-cyan" />
+              <Brain className="w-6 h-6 text-rose-400" />
             </div>
           </div>
           <h1 className="text-2xl font-display font-extrabold text-white tracking-tight">

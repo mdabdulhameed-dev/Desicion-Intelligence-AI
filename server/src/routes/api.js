@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import authRoutes from './auth.routes.js';
 import decisionRoutes from './decision.routes.js';
+import aiRoutes from './ai.routes.js';
 
 const api = Router();
 
@@ -15,5 +16,6 @@ api.get('/health', (req, res) => {
 
 api.use('/auth', authRoutes);
 api.use('/decisions', decisionRoutes);
+api.use('/ai', aiRoutes);
 
 export default api;

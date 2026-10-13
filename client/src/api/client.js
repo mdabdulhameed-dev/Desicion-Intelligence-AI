@@ -35,4 +35,13 @@ api.interceptors.response.use(
   }
 );
 
+// Gemini AI API helpers
+export const aiApi = {
+  getStatus: () => api.get('/ai/status'),
+  testKey: (apiKey) => api.post('/ai/test-key', { apiKey }),
+  saveKey: (apiKey) => api.post('/ai/save-key', { apiKey }),
+  generateBrief: (decisionId) => api.post(`/ai/decision/${decisionId}/brief`),
+  askAssistant: (decisionId, question) => api.post(`/ai/decision/${decisionId}/ask`, { question })
+};
+
 export default api;

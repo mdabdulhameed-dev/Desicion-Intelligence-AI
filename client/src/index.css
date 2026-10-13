@@ -4,18 +4,26 @@
 
 @layer base {
   body {
-    background-color: #0B0F19;
-    color: #F1F5F9;
+    background-color: #2b3496;
+    background-image:
+      radial-gradient(circle at 12% 14%, rgba(225, 29, 72, 0.22) 0%, transparent 48%),
+      radial-gradient(circle at 88% 22%, rgba(159, 18, 57, 0.18) 0%, transparent 44%),
+      radial-gradient(circle at 50% 88%, rgba(244, 63, 94, 0.16) 0%, transparent 52%),
+      radial-gradient(circle at 82% 82%, rgba(76, 5, 25, 0.24) 0%, transparent 58%);
+    background-attachment: fixed;
+    color: #FFF5F6;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    min-height: 100vh;
   }
 }
 
-/* Glassmorphism and Modern Visual Polish */
+/* Translucent Glassmorphism & Liquid Ruby Polish */
 .glass-panel {
-  background: rgba(17, 24, 39, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(26, 7, 15, 0.62);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(244, 63, 94, 0.16);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
 }
 
 .glass-panel-hover {
@@ -23,35 +31,45 @@
 }
 
 .glass-panel-hover:hover {
-  background: rgba(31, 41, 55, 0.85);
-  border-color: rgba(99, 102, 241, 0.35);
+  background: rgba(38, 11, 22, 0.78);
+  border-color: rgba(244, 63, 94, 0.45);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 16px 36px -8px rgba(225, 29, 72, 0.35);
 }
 
 .glass-card {
-  background: linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(15, 23, 42, 0.7) 100%);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(135deg, rgba(32, 9, 18, 0.75) 0%, rgba(18, 5, 11, 0.65) 100%);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(244, 63, 94, 0.18);
+  box-shadow: 0 12px 34px -10px rgba(225, 29, 72, 0.22);
 }
 
 .glass-input {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #F8FAFC;
+  background: rgba(22, 6, 13, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(244, 63, 94, 0.22);
+  color: #FFF5F6;
   transition: all 0.2s ease;
 }
 
 .glass-input:focus {
-  background: rgba(15, 23, 42, 0.9);
-  border-color: #6366F1;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  background: rgba(34, 9, 20, 0.88);
+  border-color: #F43F5E;
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.28);
   outline: none;
 }
 
 /* Gradient text */
 .gradient-text-brand {
-  background: linear-gradient(135deg, #818CF8 0%, #C084FC 50%, #38BDF8 100%);
+  background: linear-gradient(135deg, #FFE4E6 0%, #FB7185 45%, #E11D48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-ruby {
+  background: linear-gradient(135deg, #FFF1F2 0%, #F43F5E 50%, #9F1239 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -62,23 +80,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Custom Scrollbar */
+/* Custom Ruby Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0B0F19;
+  background: #090305;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #374151;
+  background: #4C0519;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4B5563;
+  background: #881337;
 }
 
 /* Tooltips & Badges */

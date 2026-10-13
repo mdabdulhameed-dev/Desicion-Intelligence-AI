@@ -41,15 +41,15 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-background">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-600/15 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-rose-600/20 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-600/15 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="w-full max-w-md relative z-10 space-y-6">
         {/* Brand header */}
         <div className="text-center space-y-2">
-          <div className="inline-flex w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-accent-cyan p-0.5 shadow-glow mb-1">
+          <div className="inline-flex w-12 h-12 rounded-2xl bg-gradient-to-tr from-rose-600 via-red-500 to-amber-500 p-0.5 shadow-glow-rose mb-1">
             <div className="w-full h-full bg-surface rounded-[14px] flex items-center justify-center">
-              <Brain className="w-6 h-6 text-accent-cyan" />
+              <Brain className="w-6 h-6 text-rose-400" />
             </div>
           </div>
           <h1 className="text-2xl font-display font-extrabold text-white tracking-tight">

@@ -22,29 +22,29 @@ export default function Navbar({ onOpenIngest, onOpenNewDecision }) {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-800 bg-background/85 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-rose-950/60 bg-black/40 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo */}
         <div className="flex items-center space-x-6">
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-accent-cyan p-0.5 shadow-glow group-hover:scale-105 transition-transform duration-200">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-600 via-red-500 to-amber-500 p-0.5 shadow-glow-rose group-hover:scale-105 transition-transform duration-200">
               <div className="w-full h-full bg-surface rounded-[10px] flex items-center justify-center">
-                <Brain className="w-5 h-5 text-accent-cyan" />
+                <Brain className="w-5 h-5 text-rose-400" />
               </div>
             </div>
             <div>
               <div className="flex items-center space-x-2">
                 <span className="font-display font-extrabold text-lg tracking-wider text-white">STRATAGEM</span>
-                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-brand-500/20 text-brand-400 border border-brand-500/30">
+                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">
                   AI CORE
                 </span>
               </div>
-              <p className="text-[11px] text-slate-400 -mt-0.5 font-medium">Decision Intelligence Platform</p>
+              <p className="text-[11px] text-rose-300/70 -mt-0.5 font-medium">Decision Intelligence Platform</p>
             </div>
           </Link>
 
           {/* Engine Status indicator */}
-          <div className="hidden lg:flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900/80 border border-slate-800 text-xs text-slate-400">
+          <div className="hidden lg:flex items-center space-x-2 px-3 py-1 rounded-full bg-rose-950/30 border border-rose-900/40 text-xs text-rose-200">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>TOPSIS & Monte Carlo v1.0</span>
           </div>

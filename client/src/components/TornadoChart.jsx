@@ -74,19 +74,19 @@ export default function TornadoChart({ sensitivityData }) {
               data={chartData}
               margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
             >
-              <CartesianGrid strokeDasharray="3 3" stroke="#1E293B" horizontal={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke="#2A0E19" horizontal={false} />
               <XAxis
                 type="number"
                 unit=" pts"
-                tick={{ fill: '#94A3B8', fontSize: 10 }}
-                axisLine={{ stroke: '#334155' }}
+                tick={{ fill: '#FDA4AF', fontSize: 10 }}
+                axisLine={{ stroke: '#451B29' }}
               />
               <YAxis
                 type="category"
                 dataKey="name"
-                tick={{ fill: '#E2E8F0', fontSize: 11, fontWeight: 500 }}
+                tick={{ fill: '#FFF1F2', fontSize: 11, fontWeight: 500 }}
                 width={120}
-                axisLine={{ stroke: '#334155' }}
+                axisLine={{ stroke: '#451B29' }}
               />
               <Tooltip
                 content={({ active, payload }) => {
@@ -109,7 +109,7 @@ export default function TornadoChart({ sensitivityData }) {
                 {chartData.map((entry, index) => (
                   <Cell
                     key={`cell-${index}`}
-                    fill={entry.swing > 14 ? '#EF4444' : entry.swing > 7 ? '#F59E0B' : '#6366F1'}
+                    fill={entry.swing > 14 ? '#E11D48' : entry.swing > 7 ? '#FB7185' : '#F43F5E'}
                   />
                 ))}
               </Bar>

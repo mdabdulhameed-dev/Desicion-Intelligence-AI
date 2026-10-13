@@ -285,8 +285,8 @@ export default function DecisionWorkspace() {
                 onClick={() => setIsBriefModalOpen(true)}
                 className="flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white shadow-glow transition"
               >
-                <FileText className="w-4 h-4" />
-                <span>Executive Brief</span>
+                <Sparkles className="w-4 h-4 text-accent-cyan" />
+                <span>Executive AI Brief</span>
               </button>
             </div>
           </div>
@@ -875,6 +875,7 @@ export default function DecisionWorkspace() {
         onClose={() => setIsBriefModalOpen(false)}
         explanation={explanation}
         decisionTitle={decision.title}
+        decisionId={id}
       />
     </div>
   );
