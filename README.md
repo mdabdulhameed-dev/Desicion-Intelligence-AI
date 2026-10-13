@@ -1,6 +1,8 @@
-# Stratagem AI | Autonomous Decision Intelligence & Risk Simulation Platform
+# Decision-Intelligence-AI | Stratagem AI
 
-Stratagem AI is a production-ready Full-Stack Decision Intelligence Platform designed to ingest fragmented multi-variable data, calculate optimal trade-offs via **TOPSIS** and **MCDA**, simulate stochastic risk distributions using **Monte Carlo** models, analyze parameter sensitivity with **Tornado charts**, and generate transparent, explainable AI executive briefs.
+AI-Powered Decision Intelligence Platform is a production-ready, full-stack web application designed to help organizations and individuals navigate complex, high-stakes scenarios. By aggregating fragmented multi-variable data, evaluating multi-variable trade-offs, and simulating potential risks, the platform transforms raw data into actionable, transparent, and explainable executive insights.
+
+Stratagem AI calculates optimal trade-offs via **TOPSIS** and **MCDA**, simulates stochastic risk distributions using **Monte Carlo** models, analyzes parameter sensitivity with **Tornado charts**, and generates transparent, explainable AI executive briefs.
 
 ---
 
@@ -43,7 +45,7 @@ Stratagem AI is a production-ready Full-Stack Decision Intelligence Platform des
 ### 6. Security & Validation
 - **JWT Authentication** with password hashing using **bcryptjs**.
 - Strict request payload validation using **Zod** across all backend routes.
-- Persistent file-backed JSON store with atomic writes.
+- Persistent file-backed JSON store with atomic writes and Supabase PostgreSQL integration.
 
 ---
 
